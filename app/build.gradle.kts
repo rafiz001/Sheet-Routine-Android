@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId = "com.rafizuddin.sheetroutine"
-        minSdk = 24
+        minSdk = 14
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,7 +35,7 @@ dependencies {
 
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
+    implementation("androidx.activity:activity:1.2.0") // Last version with minSdk 14
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
